@@ -6,7 +6,7 @@ from bitcoin.wallet import CBitcoinAddress, CBitcoinSecret, P2PKHBitcoinAddress
 
 SelectParams('testnet')
 
-faucet_address = CBitcoinAddress('mv4rnyY3Su5gjcDNzbMLKBQkBicCtHUtFB')
+faucet_address = CBitcoinAddress('mohjSavDdQYHRYXcS3uS6ttaHP8amyvX78')
 
 # For questions 1-3, we are using 'btc-test3' network. For question 4, you will
 # set this to be either 'btc-test3' or 'bcy-test'
