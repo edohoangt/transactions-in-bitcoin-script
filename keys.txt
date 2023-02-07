@@ -1,0 +1,28 @@
+=== MINE ===
+Private key: cUTiyLEgzQpChsZsVweQxyJth8aNBX3y1DQdLcvR9bNQJWVz3m6t
+Address: mgvRf2S56JRnYpnVGhnHttkchfgbsoLrvR
+
+=== ALICE ===
+Private key: cMeakLxJtMuzYeHEdNvZ1ZEDgWRxdo95S7hCGGnsZWhfVDMVyAzP
+Address: n2B1w2KHi99fPkXetQQjfNSpGuY9rgKs9u
+
+=== BOB ===
+Private key: cRWPRyQtgyb6oWeVBuYfd3DCTxB6gQhhqRaPi2e9j23kbHTSvf6d
+Address: n1QC6UBNCUJSdr5Kp8h5uuYUAsqxwFmuBQ
+
+=== BCY TESTNET ALICE INFO ===
+{
+  "private": "3380bd67fb05cc85a0e8f94920fbdf38fc5b8dcadbe45dface1e98f214bc014e",
+  "public": "02d45ed5ca1e4c64d579d62d0dbaccbec6eb699d1163b80ebbb6827839dc3def91",
+  "address": "C1Va3kGAALDj44NtpiQ9ir5TZvWEnGfAhM",
+  "wif": "Bq49QGPHnCRhodGDcvcfQACazAFyWipymTcQZhGErJP3Bdn159QS"
+}
+
+=== BCY TESTNET BOB INFO ===
+{
+  "private": "9329adb4a32c3cb613e2b4b265e79e7a78acc4d4204f2f2a17c5bf0ce4189a47",
+  "public": "032056f7c79cb3db70f8d0aa2566ed33f8b7f4b6a279993724bd3a81a2f1c5d367",
+  "address": "BuZ7XwMm7LTFrGSJfmrN1TCEUGpaGAZQZn",
+  "wif": "BtG6XLV5LTSVbLMNGEHKnF9VFKCcpZ97gi9CukTYy51qZdSHwEsS"
+}
+

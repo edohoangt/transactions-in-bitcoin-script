@@ -10,7 +10,8 @@ faucet_address = CBitcoinAddress('mohjSavDdQYHRYXcS3uS6ttaHP8amyvX78')
 
 # For questions 1-3, we are using 'btc-test3' network. For question 4, you will
 # set this to be either 'btc-test3' or 'bcy-test'
-network_type = 'btc-test3'
+# network_type = 'btc-test3'
+network_type = 'bcy-test'
 
 
 ######################################################################
@@ -21,7 +22,7 @@ network_type = 'btc-test3'
 # Send coins at https://testnet-faucet.mempool.co/
 
 my_private_key = CBitcoinSecret(
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    'cUTiyLEgzQpChsZsVweQxyJth8aNBX3y1DQdLcvR9bNQJWVz3m6t')
 
 my_public_key = my_private_key.pub
 my_address = P2PKHBitcoinAddress.from_pubkey(my_public_key)
@@ -38,11 +39,11 @@ my_address = P2PKHBitcoinAddress.from_pubkey(my_public_key)
 # Only to be imported by alice.py
 # Alice should have coins!!
 alice_secret_key_BTC = CBitcoinSecret(
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    'cMeakLxJtMuzYeHEdNvZ1ZEDgWRxdo95S7hCGGnsZWhfVDMVyAzP')
 
 # Only to be imported by bob.py
 bob_secret_key_BTC = CBitcoinSecret(
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    'cRWPRyQtgyb6oWeVBuYfd3DCTxB6gQhhqRaPi2e9j23kbHTSvf6d')
 
 # Can be imported by alice.py or bob.py
 alice_public_key_BTC = alice_secret_key_BTC.pub
@@ -67,12 +68,12 @@ bob_address_BTC = P2PKHBitcoinAddress.from_pubkey(bob_public_key_BTC)
 
 # Only to be imported by alice.py
 alice_secret_key_BCY = CBitcoinSecret.from_secret_bytes(
-    x('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'))
+    x('3380bd67fb05cc85a0e8f94920fbdf38fc5b8dcadbe45dface1e98f214bc014e'))
 
 # Only to be imported by bob.py
 # Bob should have coins!!
 bob_secret_key_BCY = CBitcoinSecret.from_secret_bytes(
-    x('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'))
+    x('9329adb4a32c3cb613e2b4b265e79e7a78acc4d4204f2f2a17c5bf0ce4189a47'))
 
 # Can be imported by alice.py or bob.py
 alice_public_key_BCY = alice_secret_key_BCY.pub
