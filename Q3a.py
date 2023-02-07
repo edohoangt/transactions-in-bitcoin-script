@@ -7,15 +7,17 @@ from lib.config import (my_private_key, my_public_key, my_address,
                     faucet_address, network_type)
 from Q1 import send_from_P2PKH_transaction
 
-
 cust1_private_key = CBitcoinSecret(
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    'cU4Hv5o5o2RHiJiMcbaCG5RNRDCL9XeYU3jcnxtY8gcMYiGWCEQr')
+# Addr: mhbCSv6HDpmbDgAGmkoLfCDKrKKdTALGLJ
 cust1_public_key = cust1_private_key.pub
 cust2_private_key = CBitcoinSecret(
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    'cTSPhDtkfgBvUKU5ZQdY2Wj4Ay8NZ276BGB879UbESzWxedB56y6')
+# Addr: mjxdTUJ23d7hiZcoiqfSQbJuD2zJnhLJqY
 cust2_public_key = cust2_private_key.pub
 cust3_private_key = CBitcoinSecret(
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    'cTFChV6BnWj4Rvh3RFa8qeRRvwctKBRr62qMXXGeEv1L2hkBEaYE')
+# Addr: mrGXxPiH382d6aHYokqATZdbAdXGa6LpQJ
 cust3_public_key = cust3_private_key.pub
 
 
@@ -27,17 +29,18 @@ cust3_public_key = cust3_private_key.pub
 # bank_private_key.
 
 Q3a_txout_scriptPubKey = [
-        # fill this in!
+        my_public_key, OP_CHECKSIGVERIFY, OP_1,
+        cust1_public_key, cust2_public_key, cust3_public_key, OP_3, OP_CHECKMULTISIG
 ]
 ######################################################################
 
 if __name__ == '__main__':
     ######################################################################
     # TODO: set these parameters correctly
-    amount_to_send = None # amount of BTC in the output you're sending minus fee
+    amount_to_send = 0.00013225 # amount of BTC in the output you're sending minus fee
     txid_to_spend = (
-        'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    utxo_index = None # index of the output you are spending, indices start at 0
+        '3e7514cf1e16c444a794d5c6f64cc7d6064b925a49af1406e968997f208bfb6e')
+    utxo_index = 2 # index of the output you are spending, indices start at 0
     ######################################################################
 
     response = send_from_P2PKH_transaction(amount_to_send, txid_to_spend, 
