@@ -44,8 +44,8 @@ if __name__ == '__main__':
     # TODO: set these parameters correctly
     amount_to_send = None # amount of BTC in the output you're sending minus fee
     txid_to_spend = (
-        'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    utxo_index = None # index of the output you are spending, indices start at 0
+        '7574b7d3ba3f84a41a31f11bd75780d58f5b1b3c1d4a110a38c25776016ba670')
+    utxo_index = 0 # index of the output you are spending, indices start at 0
     ######################################################################
 
     txin_scriptPubKey = Q3a_txout_scriptPubKey

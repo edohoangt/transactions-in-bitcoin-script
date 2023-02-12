@@ -10,8 +10,8 @@ faucet_address = CBitcoinAddress('mohjSavDdQYHRYXcS3uS6ttaHP8amyvX78')
 
 # For questions 1-3, we are using 'btc-test3' network. For question 4, you will
 # set this to be either 'btc-test3' or 'bcy-test'
-# network_type = 'btc-test3'
-network_type = 'bcy-test'
+network_type = 'btc-test3'
+# network_type = 'bcy-test'
 
 
 ######################################################################
